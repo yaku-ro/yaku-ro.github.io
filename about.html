@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Final Project</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Cormorant+Garamond:wght@700&display=swap');
+
+        *{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+          font-family: 'Cormorant Garamond', sans-serif;
+        }
+
+        body{
+          background: #bebeb8;
+        }
+
+        header{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 20px 0;
+          transition: background-color 0.5s ease;
+        }
+
+        .nav-menu li{
+          display: inline-block;
+        }
+
+        .nav-menu li a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.5rem;
+          padding: 0 15px;
+        }
+
+        .nav-menu li a:hover{
+          color: #cc0000;
+        }
+
+        .active{
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px #640404;
+        }
+
+        .active a:hover{
+          color: #fff !important;
+        }
+
+        .about{
+          height: 100vh;
+          width: 100%;
+          padding-top: 100px;
+          background: #bebeb8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .about .main img{
+          width: 580px;
+          max-width: 100%;
+          height: auto;
+          padding-top: 50px;
+        }
+
+        .all-text{
+          width: 600px;
+          max-width: 100%;
+          padding-top: 30px;
+        }
+
+        .main{
+          width: 1290px;
+          max-width: 95%;
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        .all-text h1{
+          font-size: 70px;
+          font-family: 'Belanosima', sans-serif;
+          color: #cc0000;
+          font-weight: 700;
+          padding-top: 40px;
+          margin-bottom: 20px;
+        }
+
+        .all-text p{
+          font-family: 'Cormorant Garamond', sans-serif;
+          font-size: 20px;
+          color: #111111;
+          line-height: 30px;
+          padding-top: 10px;
+          margin-bottom: 35px;
+        }
+        
+        @media screen and (max-width: 1250px){
+          .about{
+            width: 100%;
+            height: auto;
+            padding: 60px 0;
+          }
+          .all-text{
+            text-align: center;
+          }
+        }
+        @media screen and (max-width: 650px){
+          .about .main img{
+            margin-bottom: 35px;
+          }
+          .all-text h1{
+            font-size: 45px;
+            margin-bottom: 20px;
+          }
+        }
+    </style>
+    </head>
+    <body>
+      <header>
+        <div class="navigation">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item active"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+          <section class="about">
+            <div class="main">
+                <img src="img/trixia.jpg">
+                <div class="all-text">
+                  <h1>A brief introduction about me</h1>
+                  <p>My name is Trixia Sinfuego. I am a 19 year old first year student, currently studying Information Technology in Cavite State
+                    University-Carmona Campus. I came from a family of five and currently living in Maguyam, Silang, Cavite with my parents and two siblings.
+                    My hobbies include watching, reading, crochetting, listening to music, and sleeping. Fun facts (or maybe not) about me is that I like listening
+                    to people talk-- it amazes me how others' minds works. I also start hobbies I find interesting but won't finish it because I lose interest quickly.<br>
+                    <br>I pursued this course because it's what my mother want for me, I was scared at first thinking that I might fail or fall behind everyone else because this isn't what
+                    I really wanted but thanks to this course I met some amazing people in my life and they inspire me to finish this with them.</p>
+                </div>
+            </div>
+          </section>
+    </body>
+</html>
